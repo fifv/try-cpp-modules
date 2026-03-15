@@ -16,3 +16,8 @@ target_sources(try-cpp-modules PUBLIC
     FILE_SET CXX_MODULES FILES
     src/mymod.cppm
 )
+# target_precompile_headers(try-cpp-modules PUBLIC
+#     <print>
+#     <chrono>
+#     <thread>
+# )
