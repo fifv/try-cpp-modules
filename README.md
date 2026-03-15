@@ -1,1 +1,1 @@
-Using C++ 20 Moudles, with `import std`
+Using C++ 20 moudles and `import std`, with cmake
