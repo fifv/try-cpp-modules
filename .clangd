@@ -1,0 +1,10 @@
+CompileFlags:
+  Remove: 
+    # - -fmodule*
+    # - -fdep*
+    - wtf
+Diagnostics:
+  Suppress: 
+    - wtf
+    # - module_not_found
+

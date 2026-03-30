@@ -111,12 +111,12 @@ auto stressModern() -> void {
         std::print("Largest file: {} ({} bytes)\n", big->path.string(), big->size);
     }
 
-    auto names =
-        files | std::views::transform([](const FileInfo &f) { return f.path.filename().string(); }) | std::views::take(5);
-    std::print("\nFirst 5 files:\n");
-    for (auto const &n : names) {
-        std::print("  {}\n", n);
-    }
+    // auto names =
+    //     files | std::views::transform([](const FileInfo &f) { return f.path.filename().string(); }) | std::views::take(5);
+    // std::print("\nFirst 5 files:\n");
+    // for (auto const &n : names) {
+    //     std::print("  {}\n", n);
+    // }
 
 
     auto worker = std::async(std::launch::async, [] {
